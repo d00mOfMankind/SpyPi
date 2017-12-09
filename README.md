@@ -13,18 +13,12 @@ On the pi with ethernet facing down,
 put power in pin 4
 put ground in pin 6
 put output in pin 12
-according to this pin guide
 
+assume that the pins run like this
 1  2
-3  [4]
-5  [6]
+3  4
+5  6
 7  8
 9  10
-11 [12]
-13 14
-15 16
-17 18
-|
-| S-Video in this direction
-V
-
+11 12
+towards S-Video
