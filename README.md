@@ -14,11 +14,11 @@ put power in pin 4
 put ground in pin 6
 put output in pin 12
 
-assume that the pins run like this
+assume that the pins run like this </br>
 1  2 </br>
-3  4
-5  6
-7  8
-9  10
-11 12
+3  4 </br>
+5  6 </br>
+7  8 </br>
+9  10 </br>
+11 12 </br>
 towards S-Video
