@@ -15,7 +15,7 @@ put ground in pin 6
 put output in pin 12
 
 assume that the pins run like this
-1  2
+1  2 </br>
 3  4
 5  6
 7  8
