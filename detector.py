@@ -11,13 +11,14 @@ from picamera import PiCamera #guess what this imports?
 pir = MotionSensor(4)
 cam = PiCamera()
 
+print("Load sequence complete...")
 
 while True:
     pir.wait_for_motion()
     
     now = str(datetime.now())
     log = "Motion detected at >" + now + "\n"
-    imgLoc = "/home/pi/MotionCam/img/image_" + now + ".png"
+    imgLoc = "img/image_" + now + ".png"
     
     print(log) #debug, use tail on log file
         
