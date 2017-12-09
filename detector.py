@@ -2,29 +2,31 @@
 #    gpiozero
 #    picamera
 
-
+print("Importing motion sensor...")
 from gpiozero import MotionSensor #Imports the motion sensor functions from gpiozero
+pir = MotionSensor(18) #what gpio pin to take motion detector input from
+
+print("Importing time...")
 from datetime import datetime #imports date getting function
+
+print("Importing camera...")
 from picamera import PiCamera #guess what this imports?
-
-
-pir = MotionSensor(4)
 cam = PiCamera()
 
-print("Load sequence complete...")
+print("Load sequence complete.")
 
 while True:
     pir.wait_for_motion()
     
     now = str(datetime.now())
-    log = "Motion detected at >" + now + "\n"
+    log = "Motion detected at >" + now
     imgLoc = "img/image_" + now + ".png"
     
-    print(log) #debug, use tail on log file
-        
-    with open("log.txt", "a") as file:
-        file.write(log)
-        file.close()
+    print(log)
     
+    with open("log.txt", "a") as file:
+        file.write(log + "\n")
+        file.close()
+        
     cam.capture(imgLoc)
     
