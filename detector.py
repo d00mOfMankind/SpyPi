@@ -21,6 +21,7 @@ while True:
     now = str(datetime.now())
     log = "Motion detected at >" + now
     imgLoc = "img/image_" + now + ".png"
+    vidLoc = "vid/image_" + now + ".h264"
     
     print(log)
     
@@ -28,5 +29,10 @@ while True:
         file.write(log + "\n")
         file.close()
         
-    cam.capture(imgLoc)
+    #cam.capture(imgLoc) #take static image
+    
+    cam.start_recording(vidLoc)
+    
+    pir.wait_for_no_motion()
+    cam.stop_recording()
     
