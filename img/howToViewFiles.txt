@@ -1,5 +1,0 @@
-using a window manager... like you always would.
-Using a terminal only computer.
-Install fbi and run
-fbi [name of image to view]
-press enter to quit viewer
