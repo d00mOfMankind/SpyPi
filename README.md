@@ -1,18 +1,18 @@
-# SpyPi
-
-To view images on terminal
--Install fbi
--Run fbi [file name]
--Press enter to quit
-
-Pin config
-With the sensor facing away from you and th sensitivity controls at the bottom.
-The pins go (from left to right) ground, output, power(5V)
-
-On the pi with ethernet facing down,
-put power in pin 4
-put ground in pin 6
-put output in pin 12
+# SpyPi</br>
+</br>
+To view images on terminal</br>
+-Install fbi</br>
+-Run fbi [file name]</br>
+-Press enter to quit</br>
+</br>
+Pin config</br>
+With the sensor facing away from you and th sensitivity controls at the bottom.</br>
+The pins go (from left to right) ground, output, power(5V)</br>
+</br>
+On the pi with ethernet facing down,</br>
+put power in pin 4</br>
+put ground in pin 6</br>
+put output in pin 12</br>
 
 assume that the pins run like this </br>
 1  2 </br>
