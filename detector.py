@@ -44,23 +44,23 @@ def normal():
 
 
 
-def low_fps():
-	if not (os.path.isdir("imgFPS")):
-		os.makedirs("imgFPS")
-
-	while True:
-	    pir.wait_for_motion()
-	    
-	    now = str(datetime.now())
-	    log = "Motion detected at >" + now
-	    imgLoc = "imgFPS/image_" + now + ".png"
-	    
-	    print(log)
-	    
-	    with open("log.txt", "a") as file:
-	        file.write(log + "\n")
-	        file.close()
-
+def low_fps(): #not finished, DNU
+#	if not (os.path.isdir("imgFPS")):
+#		os.makedirs("imgFPS")
+#
+#	while True:
+#	    pir.wait_for_motion()
+#	    
+#	    now = str(datetime.now())
+#	    log = "Motion detected at >" + now
+#	    imgLoc = "imgFPS/image_" + now + ".png"
+#	    
+#	    print(log)
+#	    
+#	    with open("log.txt", "a") as file:
+#	        file.write(log + "\n")
+#	        file.close()
+	pass
 
 
 
