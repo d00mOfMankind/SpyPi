@@ -16,9 +16,9 @@ put output in pin 12</br>
 
 assume that the pins run like this </br>
 1  2 </br>
-3  4 </br>
-5  6 </br>
+3  4 <-- pwr </br>
+5  6 <-- gnd </br>
 7  8 </br>
 9  10 </br>
-11 12 </br>
+11 12 <-- output </br>
 towards S-Video
