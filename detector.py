@@ -84,6 +84,7 @@ def static(): #take static images
 
 
 	    cam.capture(imgLoc) #take a image, save it at location we generate earlier
+		#maybe have something to wait for a second
 
 
 #uncomment what one you want
